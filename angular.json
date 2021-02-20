@@ -24,9 +24,12 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -120,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "mon-premier-project"
+  "defaultProject": "mon-premier-project",
+  "cli": {
+    "analytics": "f9a55294-bbe7-4cd4-bc47-261706ef0ca1"
+  }
 }

@@ -1,27 +1,71 @@
-# MonPremierProject
+# Tùti Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+## Structure du component
 
-## Development server
+```
+import { component } from '@angular/core';
+@Component({
+  selector: 'le-selecteur',
+  templateUrl: './name.component.html',
+  styleUrls: ['./name.component.css'] 
+})
+export class NameComponent implements OnInit {
+    constructor(){}
+    ngOnInit(): void {
+      }
+}
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Liaisons de données
 
-## Code scaffolding
+### L'interpolation 
+> L'interpolation consiste à emettre des données depuis le TS vers le template avec les {{ }}
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### La liaison par propriété ou propery binding
+> Permet de créer une comm. dynamique de notre code TS vers template avec les []
 
-## Build
+### Liaison par evenement ou event dinding
+> Permet de créer une comm. depuis notre template vers le TS avec les ()
+ 
+### Le two way binding
+> Permet de communiquer dans les deux sens TS > T & T > TS
+> Son utilisation implique l'utilisation du FormsModule (Il faudra l'importer) avec les [()]
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Propritété personnalisé
+> Permet de passer des données depuis le component parent jusqu'aux components enfants
+>```
+>@Input() appareilName: string; 
+>@Input() appareilStatus: string;
+>```
 
-## Running unit tests
+## Les directives
+>Les directives ce sont des intructions que nous mettons sur nos components ou sur des parties de notre document et qui sont lu par Angular.
+>Angular va excecuter les instructions relatives aux directives.
+>On a les **directives structuelles** et les **directives par attributs**.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Les directives structurelles
+Les directives s. permettent de structurer le document selon les conditions que nous choisisons
+> Exemple 1 : *ngIf="appareilStatus ==='éteint'" (ngIf nous permet d'afficher conditionnelement un component)
 
-## Running end-to-end tests
+> Exemple 2 : *ngFor nous permet d'afficher un component par objet d'une liste ou d'un arrêt dans le TS.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Les directives par attribut
+Les directives par attribut permettent de modifier le comportement des components qui sont déjà dans le document
+> Exemple 1 : [ngStyle]
+> Exemple 2 : [ngClass]
 
-## Further help
+## Les pipes 
+>Exemple : date pipe, uppercase, async...
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Les services
+> C'est une façon de centraliser du code et des données pour pouvoir les utiliser dans diff. parties de l'application.
+ 
+## Le routing
+> L'un des principaux avantages de Angular est de créer des singles pages applications.
+>Tout ceci s'applique avec le routing
+
+
+
+
+
+
