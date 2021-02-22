@@ -1,5 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b3e9ff">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="appareils">Device control</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" >
+          <a  class="nav-link" routerLinkActive="active" routerLink="auth" >Authentication</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" routerLinkActive="active" routerLink="appareils">Appareils</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
 <div class="container">
   <div class="row">
-    <app-appareil-view></app-appareil-view>
+    <router-outlet></router-outlet>
   </div>
 </div>
