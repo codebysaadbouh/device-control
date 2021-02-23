@@ -64,7 +64,14 @@ Les directives par attribut permettent de modifier le comportement des component
 > L'un des principaux avantages de Angular est de créer des singles pages applications.
 >Tout ceci s'applique avec le routing
 
-
+## Les observables
+> Un observable est un objet qui émet des informations dans le temps
+> ça peut être un champ de texte dans lequel l'utilisateur va ... la progression du chargement d'un fichier.
+> ça sera egalement toutes les communications HTTP que nous allons mettre en place
+> A chaque observable on va associer un observeur
+> C'est un blog de code qui sera excecuté à chaque fois que l'observable emettra une info
+> L'observateur emet des informations ou une erreur ou un mes
+> 
 
 
 

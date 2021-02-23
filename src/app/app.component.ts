@@ -1,5 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import {AppareilService} from './services/appareil.service';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {interval, Subscription} from 'rxjs'; // Importer Observable
+
+
 
 @Component({
   selector: 'app-root',
@@ -8,10 +10,12 @@ import {AppareilService} from './services/appareil.service';
 })
 export class AppComponent implements OnInit {
 
-  constructor() {
-  }
+  constructor() {}
+
   ngOnInit(): void {
   }
+
+
 
 
 }
