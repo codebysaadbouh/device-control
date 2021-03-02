@@ -1,4 +1,5 @@
 export  class User {
+
   constructor(public firstName: string,
               public lastName: string,
               public email: string,
@@ -6,3 +7,17 @@ export  class User {
               public hobbies?: string[]) {
   }
 }
+
+/**Identique à :
+ * 
+ * export class User {
+ * firstName: string;
+ * lastName: string;
+ * 
+ * constructor (firstName: string, lastName: string){
+ *    this.firstName = firstName;
+ *    this.lastName = lastName;
+ *  }
+ * 
+ * }
+ */

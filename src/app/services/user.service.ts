@@ -15,10 +15,12 @@ export class UserService{
        ]
      }
    ];
-  UserSubject = new Subject<User[]>();
+  // emmettre des array de type user
+  userSubject = new Subject<User[]>();
 
   emitUsers(){
-    this.UserSubject.next(this.users.slice());
+    //il va appelé la méthode next sur UserSubject et qui va emettre une copie de l'array user
+    this.userSubject.next(this.users.slice());
   }
 
   addUser(user: User){
